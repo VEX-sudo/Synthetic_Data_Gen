@@ -1,0 +1,42 @@
+:root{--paper:#F6F7F6;--ink:#151A1E;--ledger:#2F4858;--teal:#12877F;--teal-light:#E1F0EE;--amber:#C98A2C;--amber-light:#FBF0DF;--hairline:#DCE1E1;--muted:#5C6B70}
+*{box-sizing:border-box}body{margin:0;background:#DEE2E0;color:var(--ink);font-family:Inter,sans-serif}
+h1,h2,h3,h4{font-family:Fraunces,serif;font-weight:500;margin:0}
+.frame{max-width:1320px;margin:16px auto;background:var(--paper);border:1px solid var(--hairline);border-radius:10px;overflow:hidden;min-height:calc(100vh - 32px)}
+.shell{display:flex;min-height:calc(100vh - 32px)}
+.sidebar{width:200px;background:#fff;border-right:1px solid var(--hairline);padding:22px 16px;flex-shrink:0}
+.brand{font-size:14.5px;line-height:1.3}.brand-sub{font-size:11px;color:var(--muted);margin:2px 0 22px}
+.nav-item{display:flex;align-items:center;gap:9px;padding:8px 9px;font-size:13px;color:var(--muted);border-left:2px solid transparent;cursor:pointer;text-decoration:none;width:100%}
+.nav-item.active{color:var(--ink);font-weight:500;border-left-color:var(--teal);background:var(--teal-light)}
+.main{flex:1;padding:26px 30px;overflow:auto}
+.page-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:4px;gap:12px}
+.page-head p{font-size:13px;color:var(--muted);margin:6px 0 0;max-width:520px;line-height:1.5}
+.btn{font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:8px 14px;border-radius:6px;border:none;cursor:pointer}
+.btn-primary{background:var(--teal);color:#fff}.btn-ghost{background:transparent;color:var(--ledger);border:1px solid var(--hairline)}
+.grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:20px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-1-2{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+.kpi{background:#fff;border:1px solid var(--hairline);border-radius:8px;padding:13px}
+.kpi-label{font-size:11px;color:var(--muted);margin-bottom:6px}
+.kpi-value{font-size:18px;font-weight:500;font-family:Fraunces,serif}.kpi-value.teal{color:var(--teal)}
+.card{background:#fff;border:1px solid var(--hairline);border-radius:8px;padding:16px 18px}
+.card h3{font-size:13.5px;margin-bottom:3px}.card-sub{font-size:11.5px;color:var(--muted);margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:11.5px}
+th{text-align:left;color:var(--muted);font-weight:500;padding:5px 7px;border-bottom:1px solid var(--hairline)}
+td{padding:6px 7px;border-bottom:1px solid #EEF1F1}
+.tag{font-size:10px;padding:2px 7px;border-radius:9px;background:var(--amber-light);color:#7A5310}
+.tag.ok{background:var(--teal-light);color:#0B5A54}
+.pipeline-track{display:flex;align-items:center}
+.p-node{flex:1;text-align:center;position:relative}
+.p-dot{width:26px;height:26px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600;color:#fff;background:var(--ledger)}
+.p-node.done .p-dot{background:var(--teal)}.p-node.current .p-dot{background:var(--amber);color:#402b0a}
+.p-label{font-size:11.5px;color:var(--muted)}.p-node.current .p-label{color:var(--ink);font-weight:500}
+.p-line{position:absolute;top:13px;left:-50%;width:100%;height:1.5px;background:var(--hairline);z-index:0}
+.p-node:first-child .p-line{display:none}.p-node.done .p-line,.p-node.current .p-line{background:var(--teal)}
+.kv{display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0;border-bottom:1px solid #EEF1F1}
+.kv span:first-child{color:var(--muted)}
+select,input[type=number]{font:12px Inter,sans-serif;border:1px solid var(--hairline);background:#fff;border-radius:6px;padding:6px 10px}
+.err{color:#B4463E;padding:20px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+canvas{max-height:180px;width:100%!important}
+@media(max-width:900px){.shell{flex-direction:column}.sidebar{width:100%}.grid-6,.grid-4,.grid-3,.grid-2,.grid-1-2{grid-template-columns:1fr 1fr}}

@@ -1,0 +1,7 @@
+ctgan
+pandas
+scikit-learn
+matplotlib
+seaborn
+table-evaluator
+torch
