@@ -1,0 +1,52 @@
+{
+    "tables": {
+        "table": {
+            "columns": {
+                "age": {
+                    "sdtype": "numerical"
+                },
+                "sex": {
+                    "sdtype": "categorical"
+                },
+                "cp": {
+                    "sdtype": "categorical"
+                },
+                "trestbps": {
+                    "sdtype": "numerical"
+                },
+                "chol": {
+                    "sdtype": "numerical"
+                },
+                "fbs": {
+                    "sdtype": "categorical"
+                },
+                "restecg": {
+                    "sdtype": "categorical"
+                },
+                "thalach": {
+                    "sdtype": "numerical"
+                },
+                "exang": {
+                    "sdtype": "categorical"
+                },
+                "oldpeak": {
+                    "sdtype": "numerical"
+                },
+                "slope": {
+                    "sdtype": "categorical"
+                },
+                "ca": {
+                    "sdtype": "categorical"
+                },
+                "thal": {
+                    "sdtype": "categorical"
+                },
+                "target": {
+                    "sdtype": "categorical"
+                }
+            }
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "V1"
+}
